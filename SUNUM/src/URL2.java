@@ -40,15 +40,7 @@ public class URL2 extends JFrame{
      add(an.buton);
      add(an.buton2);
    
-  //   buton.addActionListener(new ActionListener(){
-    //       @Override
-      //     public void actionPerformed(ActionEvent e) {//YANİ BURASI GUI DİR ASLINDA
-               //FURKAN BURDA BİR TRY CATCH MEKANİZMASI MURDU KENDİSİ SORUN OLURSA BURAYA BAK TEKRAR
-               //1. problemin giriş sayfasının constractrını çağır buraya
-               
-             //  TEMP r=new TEMP();
-              // r.setBounds(100, 200, 500,500);
-               //r.setVisible(true);
+ 
                
                
               
@@ -64,7 +56,7 @@ public class URL2 extends JFrame{
      
       
       
-        //ANCAK EĞER İSTERSEN BELİRLİ KONTEYNARLARA PANELLERE FALAN DA ATABİLİRSİN
+    
         
       }
 }
