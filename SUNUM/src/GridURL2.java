@@ -221,7 +221,7 @@ public int squarenumber=0;
            for(char lk:dizi)
            {
                st=lk;
-              // System.out.println("ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL    "+st);
+              // System.out.println("    "+st);
            
         
         
@@ -335,14 +335,14 @@ public int squarenumber=0;
              
              }
              
-             System.out.println(temp.PassObjectXY.get(0).getId());//furkan unutma i 0 dan başladığı için İD numaraları da 
-             //EKLENME SIRASININ 1 EKSİĞİDİR YANİ İD=12 İS O 13. OLARAK EKLENMİŞ KUTUDUR
+             System.out.println(temp.PassObjectXY.get(0).getId());
+
              //listelere nesneler eklendi
              
-          //BUTON EKLEYEBİLİYORSUN GÖLGELEMEYİ BU SAYEDE YAP   
+          
         int yuı=78;
              
-             if(temp.Start.isEmpty())//FURKAN UNUTMAAAAAAAAAAAAA TİMER İF LERE GİREMEZ!!!!!!!!!!!!!!!!! KOŞULU SAĞLAMIYORSA
+             if(temp.Start.isEmpty())
              {
              Random random=new Random();
              
@@ -377,8 +377,7 @@ public int squarenumber=0;
              g.drawString("H", temp.PassObjectXY.get(numberFinish).getX()+10, temp.PassObjectXY.get(numberFinish).getY()+20);
              }
            
-             //ROBOTUMUZUN ÇİZİM FONKSİYONU
-             //BAŞLANGIÇ NOKTASINDAN X OLARAK 60 SAĞINA YERLEŞSİN DİYE KOYDUM BUNU DEĞİŞTİR TABİ Kİ DE
+             
              /*
             Timer timer=new Timer(1000,new ActionListener() {
                 @Override
@@ -755,9 +754,8 @@ public int squarenumber=0;
        */
         
         
-        //her  harekette yeni bir nesne oluşturmak lazım o yüzden burda oluşmalı çünkü her harekette
-        //yeni bir kare oluşmalı
-     //   this.x= robot.Left(this.x);//İLK OLARAK X Y Yİ GÜNCELLERSEN SONRA ARRAYLİSTVİSİTED A EKLERSEN ROBOTUN GELDİĞİ YER DE EKLENİR LİSTEYE
+        
+     
         temp.arraylistVisitedX.add(this.x);
         temp.arraylistVisitedY.add(this.y);
        if(!temp.PassObjectXY.isEmpty())
@@ -1433,7 +1431,7 @@ public int squarenumber=0;
         int RobotsUp=robot.up(this.y);
         int RobotsDown=robot.down(this.y);
         int ResultControl=0;
-          //listelere dışardan erişmeye izin vermiyo diğer şeylere izin veriyo
+        
         
          
          if(temp.PassObjectXY.get(numberFinish).getX()==RobotsLeft&&temp.PassObjectXY.get(numberFinish).getY()==this.y)
@@ -1648,7 +1646,7 @@ public int squarenumber=0;
                //{
                  //  timer.stop();
                //}
-             //  this.x= robot.Left(this.x);BURADA EKLEME İŞLEMİNİ YAPMALISIN ÇÜNKÜ ROBOTUN BULUNDUĞU X,Y BURADAKİDİR
+             //  this.x= robot.Left(this.x);
            
            }
            else if(VR==0&&Rk==0&&SRk==1&&ControlRightCost!=1)
@@ -1704,7 +1702,7 @@ public int squarenumber=0;
                //{
                  //  timer.stop();
                //}
-             //  this.x= robot.Left(this.x);BURADA EKLEME İŞLEMİNİ YAPMALISIN ÇÜNKÜ ROBOTUN BULUNDUĞU X,Y BURADAKİDİR
+             //  this.x= robot.Left(this.x);
            
            }
            else if(VR==0&&Rk==0&&SRk==1)
@@ -1810,10 +1808,9 @@ public int squarenumber=0;
               // this.x=temp.arraylistVisitedX.get(g);
                //this.y=robot.down(temp.arraylistVisitedY.get(g));
            }
-           //ROBOTUN KENDİ KONUMUNUN BULUNDUĞU YER BURASIDIR BU YÜZDEN BAĞLAMALAR BURDAN YAPULMALIDIR
+           
          //  int[] arrayyyy;
-          // vertex[temp.arraylistVisitedid.get()]=graph.addVertex(1);//bunların ikiside id numarasıdır robotun etrafındaki karelerin
-           //id numaralarını bularak her turda yeni gelen id leri ekliycek şekilde bir algoritma kur aynı kazamda edgeleri de
+          // vertex[temp.arraylistVisitedid.get()]=graph.addVertex(1);
          // arrayyyy= dijkstra2.shortestPathBetween(graph, vertex[2],vertex[7]);
            if(temp.PassObjectXY.get(numberFinish).getX()==this.x&&temp.PassObjectXY.get(numberFinish).getY()==this.y)
                {
@@ -1829,7 +1826,7 @@ public int squarenumber=0;
                    
                    
                    
-                   System.out.println("YOOOOOOOOOOOOOOOOOOLLLLLLL");
+                   
                    
                    
                    
@@ -1881,11 +1878,9 @@ public int squarenumber=0;
        {
            
        
-     //   System.out.println("BSJKAHGDHKGSKDG:  "+temp.arraylistVisitedX.get(temp.arraylistVisitedid.get(temp.arraylistVisitedid-1))+"   "+temp.arraylistVisitedY.get(temp.arraylistVisitedX.size()-1));//burda sorun yok 
-        //System.out.println("BSJKAHGDHKGSKDG:  "+temp.arraylistVisitedX.get(temp.arraylistVisitedX.size()-2)+"   "+temp.arraylistVisitedY.get(temp.arraylistVisitedX.size()-2));//burda so
+
        }
-       // System.out.println("BSJKAHGDHKGSKDG:  "+temp.PassObjectXY.get(numberStart).getX()+"   "+temp.PassObjectXY.get(numberStart).getY());
-        //aynı anda problem1 e denemek için 2-3 kere basıosun ya o yüzden farklı sayılar basıo;
+       
        
        // this.x += 30;
         //this.y += 30;
