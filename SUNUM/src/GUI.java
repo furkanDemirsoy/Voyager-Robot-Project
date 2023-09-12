@@ -124,8 +124,7 @@ frame.setUndecorated(false);
         problem1.addActionListener(new ActionListener(){
            @Override
            public void actionPerformed(ActionEvent e) {
-               //FURKAN BURDA BİR TRY CATCH MEKANİZMASI MURDU KENDİSİ SORUN OLURSA BURAYA BAK TEKRAR
-               //1. problemin giriş sayfasının constractrını çağır buraya
+              
                
                int sel=JOptionPane.showConfirmDialog(c,"1. url mi ?","Labirent Seçimi",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE);
                 if(sel==JOptionPane.YES_OPTION)
@@ -157,8 +156,7 @@ frame.setUndecorated(false);
         problem2.addActionListener(new ActionListener(){
            @Override
            public void actionPerformed(ActionEvent e) {
-               //FURKAN BURDA BİR TRY CATCH MEKANİZMASI MURDU KENDİSİ SORUN OLURSA BURAYA BAK TEKRAR
-               //1. problemin giriş sayfasının constractrını çağır buraya
+               
                
               
                 String str=JOptionPane.showInputDialog("Enter Widht Value");
